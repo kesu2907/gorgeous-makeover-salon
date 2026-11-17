@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gorgeous Makeover Salon  | Beauty & Style</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff8fc;
+    color: #30213a;
+}
+
+header {
+    background: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 3px 15px #00000010;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 700;
+    color: #e84393;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 22px;
+    color: #30213a;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #e84393;
+}
+
+.hero {
+    min-height: 570px;
+    padding: 100px 8%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(110deg, #ffe0ef, #eadcff);
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero small {
+    color: #e84393;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(45px, 7vw, 75px);
+    line-height: 1.15;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #e84393;
+}
+
+.hero p {
+    color: #75677d;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(120deg, #f45191, #8e52dc);
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+section {
+    padding: 75px 8%;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.heading p {
+    color: #817486;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 25px #0000000b;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card .emoji {
+    font-size: 45px;
+}
+
+.card h3 {
+    margin: 15px 0 8px;
+    color: #e84393;
+}
+
+.card p {
+    color: #817486;
+    font-size: 14px;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.about {
+    background: #f6eaff;
+    text-align: center;
+}
+
+.about p {
+    max-width: 650px;
+    margin: 15px auto;
+    line-height: 1.9;
+    color: #75677d;
+}
+
+.booking {
+    background: #fff0f7;
+}
+
+form {
+    max-width: 480px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px #0000000b;
+}
+
+input, select {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: 1px solid #eadce8;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+form button {
+    width: 100%;
+    margin-top: 12px;
+}
+
+footer {
+    background: #30213a;
+    color: white;
+    padding: 40px 8%;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 10px;
+    color: #d7c6dd;
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 7px;
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 450px;
+        padding: 65px 7%;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    .heading h2 {
+        font-size: 32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Gorgeous Makeover Salon ✨</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#booking">Booking</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <div class="hero-content">
+        <small>WELCOME TO GORGEOUS MAKEOVER SALON</small>
+
+        <h1>Beauty Begins <span>With You.</span></h1>
+
+        <p>
+            Discover your beauty with our professional
+            salon services. Feel beautiful, confident
+            and special every day.
+        </p>
+
+        <a href="#booking" class="btn">
+            Book Appointment →
+        </a>
+    </div>
+</div>
+
+<section id="services">
+
+    <div class="heading">
+        <h2>Our Beauty Services</h2>
+        <p>Professional care for your beauty and style.</p>
+    </div>
+
+    <div class="services">
+
+        <div class="card">
+            <div class="emoji">💇‍♀️</div>
+            <h3>Hair Styling</h3>
+            <p>Beautiful haircuts and professional styling.</p>
+            <div class="price">₹499</div>
+        </div>
+
+        <div class="card">
+            <div class="emoji">💆‍♀️</div>
+            <h3>Facial</h3>
+            <p>Refresh your skin and bring out your glow.</p>
+            <div class="price">₹799</div>
+        </div>
+
+        <div class="card">
+            <div class="emoji">💄</div>
+            <h3>Makeup</h3>
+            <p>Look stunning for every special occasion.</p>
+            <div class="price">₹1499</div>
+        </div>
+
+        <div class="card">
+            <div class="emoji">💅</div>
+            <h3>Manicure</h3>
+            <p>Beautiful nails with professional care.</p>
+            <div class="price">₹399</div>
+        </div>
+
+        <div class="card">
+            <div class="emoji">✨</div>
+            <h3>Skin Care</h3>
+            <p>Give your skin the care it deserves.</p>
+            <div class="price">₹999</div>
+        </div>
+
+        <div class="card">
+            <div class="emoji">👰</div>
+            <h3>Bridal Makeup</h3>
+            <p>Special bridal beauty and makeover services.</p>
+            <div class="price">₹4999</div>
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="heading">
+        <h2>About Gorgeous Makeover Salon </h2>
+    </div>
+
+    <p>
+        Welcome to Gorgeous Makeover Salon , where beauty meets style.
+        Our goal is to make every customer feel confident,
+        beautiful and special. Enjoy professional beauty
+        services in a welcoming environment.
+    </p>
+</section>
+
+<section class="booking" id="booking">
+
+    <div class="heading">
+        <h2>Book Your Appointment</h2>
+        <p>Choose your service and contact us.</p>
+    </div>
+
+    <form id="bookingForm">
+
+        <input type="text" id="name"
+        placeholder="Your Full Name" required>
+
+        <input type="tel" id="phone"
+        placeholder="Your Phone Number" required>
+
+        <select id="service" required>
+            <option value="">Select Your Service</option>
+            <option>Hair Styling</option>
+            <option>Facial</option>
+            <option>Makeup</option>
+            <option>Manicure</option>
+            <option>Skin Care</option>
+            <option>Bridal Makeup</option>
+        </select>
+
+        <input type="date" id="date" required>
+
+        <button type="submit" class="btn">
+            Book on WhatsApp
+        </button>
+
+    </form>
+</section>
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Gorgeous Makeover Salon</strong></p>
+    <p>Shop No. 4262, Street Number 8, Near Shiv Mandir,
+    Durga Puri, Haibowal Kalan, Ludhiana, Punjab 141001</p>
+    <p>WhatsApp: +91 7888313768</p>
+    <a href="https://wa.me/917888313768" target="_blank">
+        Book Appointment on WhatsApp
+    </a>
+</section>
+<footer>
+    <h2>Gorgeous Makeover Salon  ✨</h2>
+    <p>Beauty • Style • Confidence</p>
+    <p>© 2026 Gorgeous Makeover Salon . All Rights Reserved.</p>
+    <section id="location" style="padding: 30px; text-align: center;">
+        <h2>Find Our Salon</h2>
+        <p>Gorgeous Makeover Salon, Ludhiana</p>
+    
+        <iframe
+            src="https://www.google.com/maps?q=Shop+No+4262+Street+Number+8+Durga+Puri+Haibowal+Kalan+Ludhiana+Punjab+141001&output=embed"
+            width="100%"
+            height="350"
+            style="border:0; border-radius:15px;"
+            allowfullscreen
+            loading="lazy">
+        </iframe>
+    </section>
+</footer>
+
+<script>
+document.getElementById("bookingForm")
+.addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    const service = document.getElementById("service").value;
+    const date = document.getElementById("date").value;
+
+    const salonNumber = "919463191711";
+
+    const message =
+    `Hello Gorgeous Makeover Salon ! My name is ${name}.
+    Phone: ${phone}.
+    Service: ${service}.
+    Date: ${date}.
+    I want to book an appointment.`;
+
+    window.open(
+        "https://wa.me/" + salonNumber +
+        "?text=" + encodeURIComponent(message),
+        "_blank"
+    );
+});
+</script>
+
+</body>
+</html>
+
